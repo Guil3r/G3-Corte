@@ -1,18 +1,24 @@
 :root{
     --cor-texto: #ffffff;
-    --cor-fundo: rgb(163, 163, 163);
+    --cor-degrade: linear-gradient(97.54deg, #ff9900 35.49%, #fffb02 165.37%);
     --cor-fundo-nav: rgb(70, 70, 70);
     --font-principal: Josefin Sans, sans-serif;
 }
 
-a {
+.nav-list li a{
+    font-size: 1.3rem;
+    font-weight: 600;
     color: var(--cor-texto);
     text-decoration: none;
+    padding: 10px 30px;
     transition: 0.3s;
 }
 
 a:hover {
     opacity: 0.7;
+    background: var(--cor-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo{
@@ -36,10 +42,6 @@ nav {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
-}
-
-.nav-list li a{
-    font-size: 1.2rem;
 }
 
 .mobile-menu div {
@@ -84,6 +86,10 @@ main {
     .nav-list li {
         margin-left: 0;
         opacity: 0;
+    }
+
+    .nav-list li a{
+        padding: 10px 10vw;
     }
 
     .mobile-menu {
