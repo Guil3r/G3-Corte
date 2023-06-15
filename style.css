@@ -9,7 +9,8 @@ body {
     background-color: #252525;
     height: 92vh;
     overflow-x: hidden;
-    /*colocar efeito paralax, com foto de fundo*/
+    width: 100vw;
+    height: 100vh;
 }
 .nav-list li a{
     font-size: 1.3rem;
