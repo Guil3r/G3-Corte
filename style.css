@@ -8,9 +8,9 @@
 body {
     background-color: #252525;
     height: 92vh;
-    overflow-x: hidden;
     width: 100vw;
-    height: 100vh;
+    overflow-x: hidden;
+    
 }
 .nav-list li a{
     font-size: 1.3rem;
@@ -63,13 +63,12 @@ nav {
 .mobile-menu {
     display: none;
     cursor: pointer;
-    margin-right: 20px;
 }
 
 
 @media (max-width: 1100px) {
 
-    body {
+    body{
         overflow-x: hidden;
     }
 
@@ -83,7 +82,7 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
+        transform: translateX(105%);
         transition: transform 0.3s ease-in;
     }
 
