@@ -5,6 +5,12 @@
     --font-principal: Josefin Sans, sans-serif;
 }
 
+body {
+    background-color: #252525;
+    height: 92vh;
+    overflow-x: hidden;
+    /*colocar efeito paralax, com foto de fundo*/
+}
 .nav-list li a{
     font-size: 1.3rem;
     font-weight: 600;
@@ -22,12 +28,13 @@ a:hover {
 }
 
 .logo{
-    width: 200px;
+    width: 180px;
+    margin-left: 20px;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: var(--font-principal);
     background: var(--cor-fundo-nav);
@@ -55,13 +62,9 @@ nav {
 .mobile-menu {
     display: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 
-main {
-    background-color: #000000;
-    height: 92vh;
-    /*colocar efeito paralax, com foto de fundo*/
-}
 
 @media (max-width: 1100px) {
 
