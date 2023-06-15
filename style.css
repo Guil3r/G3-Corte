@@ -1,0 +1,122 @@
+:root{
+    --cor-texto: #ffffff;
+    --cor-fundo: rgb(163, 163, 163);
+    --cor-fundo-nav: rgb(70, 70, 70);
+    --font-principal: Josefin Sans, sans-serif;
+}
+
+a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-principal);
+    background: var(--cor-fundo-nav);
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list li a{
+    font-size: 1.2rem;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--cor-texto);
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    background-color: #000000;
+    height: 92vh;
+    /*colocar efeito paralax, com foto de fundo*/
+}
+
+@media (max-width: 1100px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 50vh;
+        background: var(--cor-fundo-nav);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+       opacity: 0;
+       transform: translateX(50px);
+    }
+    to {
+       opacity: 1;
+       transform: translateX(0px);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
