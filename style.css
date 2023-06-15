@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #252525;
+    background: #000000 url(./imagens/bg1.jpg) top right no-repeat  fixed;
+    background-size: cover;
     height: 92vh;
     width: 100vw;
     overflow-x: hidden;
@@ -92,7 +93,7 @@ nav {
     }
 
     .nav-list li a{
-        padding: 10px 10vw;
+        padding: 10px 7vw;
     }
 
     .mobile-menu {
