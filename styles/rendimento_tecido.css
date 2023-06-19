@@ -1,16 +1,7 @@
-#rendimento_tecido{
-    background-color: var(--cor-bg-div);
-    width: 70%;
-    max-width: 700px;
-    height: 400px;
-    border-radius: 10px;
-    font-family: var(--font-principal);
-    color: var(--cor-texto);
-    margin: 30px auto;
-    padding-left: 10px;
-
+#rendimento{
+    height: 80vh;
+    max-width: 600px;
 }
-
 h2{
     font-size: 2rem;
     font-weight: 600;
@@ -41,10 +32,12 @@ input{
 
 #btn_calcular_rendimento{
     background: var(--cor-degrade);
+    color: #000000;
     border-radius: 10px;
     padding: 10px;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 
 }
 

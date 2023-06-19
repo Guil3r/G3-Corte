@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="shortcut icon" href="./imagens/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/rendimento_tecido.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -24,20 +23,37 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="/">Início</a></li>
-                <li><a href="/">Modelagem</a></li>
-                <li><a href="/">Tecido</a></li>
-                <li><a href="#rendimento">Rendimento</a></li>
-                <li><a href="/">Localização</a></li>
-                <li><a href="/">Parceiros</a></li>
-                <li><a href="/">Login</a></li>
+                <li><a class="nav-list_link" href="/">Início</a></li>
+                <li><a class="nav-list_link" href="#rendimento">Rendimento</a></li>
+                <li><a class="nav-list_link" href="/">Modelagem</a></li>
+                <li><a class="nav-list_link" href="/">Tecido</a></li>
+                <li><a class="nav-list_link" href="/">Localização</a></li>
+                <li><a class="nav-list_link" href="/">Parceiros</a></li>
+                <li><a class="nav-list_link" href="/">Login</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section id="#Contato">
+            <div class="container_section" id="section_contato">
+                <div class="contato_texto">
+                    <h2 class="titulos">Resolvemos o seu Problema.</h2>
+                    <p class="textos">Oficina de Corte de tecidos, focados em corte Jeans
+                        industrial, com alta demanda, experiência,
+                        qualidade e rapidez.</p>
+                        <br>
+                        <p class="textos">Entre em contato:</p>
+                </div>
+                    <div class="contato_btn">
+                        <a class="contato_btn_whats" href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5562993241980&e=AT3RGEB1mVNiXYIRT8f43KARro7WL1jfiJoNzyIN0V-eSaxsybMEwFk2TNzH9XlzmD9UjTDxustutXxkrFvlhMqBa05lWcLhshf5eUzg53a4IPjxWo6JfQ" target="_blank">Whatsapp</a>
+                        <a class="contato_btn_insta" href="https://www.instagram.com/g3cortes/" target="_blank">Instagram</a>
+                    </div>
+            </div>
+        </section>
+
         <section id="#rendimento">
-            <div id="rendimento_tecido">
-                <h2>Rendimento Tecido</h2>
+            <div class="container_section" id="rendimento">
+                <h2 class="titulos">Rendimento Tecido</h2>
                 <div>
                     <form method="post">
                         <label for="tecido">Quantos metros de tecido ?</label>
@@ -46,7 +62,7 @@
                         <label for="cmatriz">Qual comprimento da matriz?</label>
                         <input type="number" name="cmatriz" id="cmatriz" placeholder=" Comprimento" required>
                         <br>
-                        <label for="qtn">Quantidade de peças na matriz?</label>
+                        <label for="qtn">Total de peças na matriz?</label>
                         <input type="number" name="tecido" id="qtn" placeholder=" Quantidade" required>
                     </form>
                     <br>
@@ -59,6 +75,18 @@
                 <br>
                 <p id="resultado"></p>
             </div>
+        </section>
+
+        <section id="#modelagem">
+            <div class="container_section" id="modelagem">
+                <h2 class="titulos">MODELAGEM</h2>
+                <img class="sections_imagens" src="./imagens/modelagens.jpg" alt="Modelagens">
+                <div>
+                    <p class="textos">Modelagens testadas e aprovadas usadas por grandes marcas do mercado. Com peças piloto para conferencia.
+                    </p>
+                </div>
+            </div>
+            
         </section>
 
     </main>

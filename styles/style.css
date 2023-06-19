@@ -1,6 +1,10 @@
+@import url(./rendimento_tecido.css);
+@import url(./contato.css);
+@import url(./modelagem.css);
+
 :root{
     --cor-texto: #ffffff;
-    --cor-bg-div: #181818c2;
+    --cor-bg-div: #18181883;
     --cor-degrade: linear-gradient(97.54deg, #ff9900 35.49%, #fffb02 165.37%);
     --cor-fundo-nav: rgba(44, 44, 44, 0.932);
     --font-principal: Josefin Sans, sans-serif;
@@ -23,7 +27,7 @@ body {
     transition: 0.3s;
 }
 
-a:hover {
+.nav-list_link:hover {
     opacity: 0.7;
     background: var(--cor-degrade);
     -webkit-background-clip: text;
@@ -66,6 +70,31 @@ nav {
 .mobile-menu {
     display: none;
     cursor: pointer;
+}
+
+.container_section{
+    background-color: var(--cor-bg-div);
+    width: 80%;
+    max-width: 800px;
+    height: 80vh;
+    max-height: 600px;
+    border-radius: 10px;
+    font-family: var(--font-principal);
+    color: var(--cor-texto);
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.titulos{
+    background: var(--cor-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textos{
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-indent: 10px;
 }
 
 
