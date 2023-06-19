@@ -13,7 +13,7 @@ function rendimento(){
         let divisao = ( metros / comp ) -1
         let res = divisao * qt
 
-        resultado.innerHTML = 'Total:  ' + Math.trunc(`${res}`) + ' peças aproximadamente'
+        resultado.innerHTML = '<font size="6"> Total:  ' + Math.trunc(`${res}`) + ' peças aproximadamente </font>'
         
     }
 }

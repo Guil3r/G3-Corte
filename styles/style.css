@@ -1,8 +1,8 @@
 :root{
     --cor-texto: #ffffff;
-    --cor-bg-div: #00000050;
+    --cor-bg-div: #181818c2;
     --cor-degrade: linear-gradient(97.54deg, #ff9900 35.49%, #fffb02 165.37%);
-    --cor-fundo-nav: rgb(70, 70, 70);
+    --cor-fundo-nav: rgba(44, 44, 44, 0.932);
     --font-principal: Josefin Sans, sans-serif;
 }
 
