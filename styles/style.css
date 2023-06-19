@@ -1,5 +1,6 @@
 :root{
     --cor-texto: #ffffff;
+    --cor-bg-div: #00000050;
     --cor-degrade: linear-gradient(97.54deg, #ff9900 35.49%, #fffb02 165.37%);
     --cor-fundo-nav: rgb(70, 70, 70);
     --font-principal: Josefin Sans, sans-serif;
@@ -41,6 +42,7 @@ nav {
     font-family: var(--font-principal);
     background: var(--cor-fundo-nav);
     height: 8vh;
+    min-height: 75px;
 }
 
 .nav-list {

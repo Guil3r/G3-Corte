@@ -27,7 +27,7 @@
                 <li><a href="/">Início</a></li>
                 <li><a href="/">Modelagem</a></li>
                 <li><a href="/">Tecido</a></li>
-                <li><a href="/">Rendimento</a></li>
+                <li><a href="#rendimento">Rendimento</a></li>
                 <li><a href="/">Localização</a></li>
                 <li><a href="/">Parceiros</a></li>
                 <li><a href="/">Login</a></li>
@@ -35,18 +35,20 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="#rendimento">
             <div id="rendimento_tecido">
                 <h2>Rendimento Tecido</h2>
                 <div>
-                    <label for="nome">Quantos metros de tecido ?</label>
-                    <input type="number" name="tecido" id="tecido">
-                    <br>
-                    <label for="nome">Qual comprimento da matriz?</label>
-                    <input type="number" name="cmatriz" id="cmatriz">
-                    <br>
-                    <label for="nome">Quantidade de peças na matriz?</label>
-                    <input type="number" name="tecido" id="qtn">
+                    <form method="post">
+                        <label for="tecido">Quantos metros de tecido ?</label>
+                        <input type="number" name="tecido" id="tecido" placeholder="Metragem" required>
+                        <br>
+                        <label for="cmatriz">Qual comprimento da matriz?</label>
+                        <input type="number" name="cmatriz" id="cmatriz" placeholder="Comprimento" required>
+                        <br>
+                        <label for="qtn">Quantidade de peças na matriz?</label>
+                        <input type="number" name="tecido" id="qtn" placeholder="Quantidade" required>
+                    </form>
                     <br>
                 </div>
                 <br>
