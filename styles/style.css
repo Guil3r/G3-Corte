@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #000000 url(./imagens/bg1.jpg) top right no-repeat  fixed;
+    background: #000000 url(../imagens/bg1.jpg) top right no-repeat  fixed;
     background-size: cover;
     height: 92vh;
     width: 100vw;

@@ -1,0 +1,44 @@
+#rendimento_tecido{
+    background-color: #ffffff56;
+    width: 70%;
+    height: 400px;
+    border-radius: 10px;
+    font-family: var(--font-principal);
+    color: var(--cor-texto);
+    margin: 30px auto;
+    padding-left: 10px;
+
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px 0;
+    text-align: center;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.btn{
+    text-align: right;
+    margin-right: 20px;
+}
+
+#btn_calcular_rendimento{
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+
+}
+
+#btn_calcular_rendimento:hover{
+    background: var(--cor-degrade);
+    color: #000000;
+    border: none;
+}

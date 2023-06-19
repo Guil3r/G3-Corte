@@ -6,7 +6,8 @@
     <title>G3 Corte</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="shortcut icon" href="./imagens/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/rendimento_tecido.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -34,11 +35,35 @@
         </nav>
     </header>
     <main>
+        <section>
+            <div id="rendimento_tecido">
+                <h2>Rendimento Tecido</h2>
+                <div>
+                    <label for="nome">Quantos metros de tecido ?</label>
+                    <input type="number" name="tecido" id="tecido">
+                    <br>
+                    <label for="nome">Qual comprimento da matriz?</label>
+                    <input type="number" name="cmatriz" id="cmatriz">
+                    <br>
+                    <label for="nome">Quantidade de peças na matriz?</label>
+                    <input type="number" name="tecido" id="qtn">
+                    <br>
+                </div>
+                <br>
+                <div class="btn"><input id="btn_calcular_rendimento" type="button" value="Calcular" onclick="rendimento()"></div>
+                <br>
+                <div>
+                <p>Resultado :</p>
+                <br>
+                <p id="resultado"></p>
+            </div>
+        </section>
 
     </main>
     <footer>
-        <script src="mobile-navbar.js"></script>
+        
     </footer>
-    
+    <script src="mobile-navbar.js"></script>
+    <script src="rendimento_tecido.js"></script>
 </body>
 </html>
