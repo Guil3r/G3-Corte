@@ -10,8 +10,8 @@ function rendimento(){
         let comp = Number(cmatriz.value)
         let qt = Number(quantidade.value)
 
-        let divisao = ( metros / comp ) -1
-        let res = divisao * qt
+        let divisao = ( metros / (comp * 2 )) -1
+        let res = Math.trunc(divisao)* qt
 
         resultado.innerHTML = '<font size="5"> Total:  ' + Math.trunc(`${res}`) + ' peças aproximadamente </font>'
         
