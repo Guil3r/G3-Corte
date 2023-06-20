@@ -1,6 +1,5 @@
 @import url(./rendimento_tecido.css);
 @import url(./contato.css);
-@import url(./modelagem.css);
 
 :root{
     --cor-texto: #ffffff;
@@ -13,10 +12,14 @@
 body {
     background: #000000 url(../imagens/bg1.jpg) top right no-repeat  fixed;
     background-size: cover;
-    height: 92vh;
-    width: 100vw;
-    overflow-x: hidden;
-    
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 .nav-list li a{
     font-size: 1.3rem;
@@ -59,6 +62,7 @@ nav {
     margin-left: 32px;
 }
 
+/* v Menu haamburguer */
 .mobile-menu div {
     width: 32px;
     height: 2px;
@@ -76,8 +80,6 @@ nav {
     background-color: var(--cor-bg-div);
     width: 80%;
     max-width: 800px;
-    height: 80vh;
-    max-height: 600px;
     border-radius: 10px;
     font-family: var(--font-principal);
     color: var(--cor-texto);
@@ -95,6 +97,22 @@ nav {
     font-weight: 300;
     font-size: 1.2rem;
     text-indent: 10px;
+}
+
+.container_section > div > p {
+    margin-top: 20px;
+}
+
+.sections_imagens{
+    width: 100%;
+}
+
+#rendimento{
+height: 450px;
+}
+
+#loc{
+    width: 100%;
 }
 
 
@@ -129,6 +147,10 @@ nav {
 
     .mobile-menu {
         display: block;
+    }
+
+    #rendimento {
+        height: 500px;
     }
 
 }
