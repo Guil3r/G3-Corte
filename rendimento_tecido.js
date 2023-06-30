@@ -1,12 +1,12 @@
 function rendimento(){
-    let tecido = document.getElementById('tecido')
+    let qtecido = document.getElementById('qtecido')
     let cmatriz = document.getElementById('cmatriz')
     let quantidade = document.getElementById('qtn')
 
-    if ( tecido.value == 0 || cmatriz.value == 0 || quantidade.value == 0) {
+    if ( qtecido.value == 0 || cmatriz.value == 0 || quantidade.value == 0) {
         window.alert('[ERRO] Faltam dados !')
     } else {
-        let metros = Number(tecido.value)
+        let metros = Number(qtecido.value)
         let comp = Number(cmatriz.value)
         let qt = Number(quantidade.value)
 

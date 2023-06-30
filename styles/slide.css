@@ -1,0 +1,55 @@
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides{
+    display: flex;
+    align-items: center;
+    width: 420px;
+    height: 100px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.images > img{
+    width: 80px;
+    margin-left: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.images > img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#atual{
+    transition: all 0.2s;
+}
+
+.btn{
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#voltar, #next{
+    margin: 0 auto;
+}
+
+.material-symbols-outlined:hover{
+    transform: scale(1.5);
+}
+
+@media (max-width: 1100px) {
+
+    .slides{
+        width: 220px;
+    }
+}
