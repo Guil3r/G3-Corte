@@ -23,9 +23,10 @@ function slide() {
     } else if(atual < 0) {
         atual = quant.length-1
     }
+    imagem.style.marginLeft = -100*atual+'px'
     
-    imagem.style.marginLeft = -100*atual+'px';
 }
+
 setInterval(()=>{
    if(rolar){
         atual++
