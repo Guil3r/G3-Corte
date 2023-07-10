@@ -14,6 +14,11 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 body {
     background: #000000 url(../imagens/bg1.jpg) top right no-repeat  fixed;
     background-size: cover;
