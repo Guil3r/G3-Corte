@@ -109,6 +109,15 @@ nav {
     text-indent: 10px;
 }
 
+#tabela-tec{
+    margin-left: 20%;
+}
+
+.txttec{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .container_section > div > p {
     margin-top: 20px;
 }
